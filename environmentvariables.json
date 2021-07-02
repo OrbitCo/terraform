@@ -1,0 +1,34 @@
+{
+    "dev": {
+        "ARM_SUBSCRIPTION_ID": "fedbce29-dc93-46cb-97b0-c23a020a3874",
+        "ARM_CLIENT_ID": "048421fa-d524-4a43-b646-61687d426b9c",
+        "ARM_CLIENT_SECRET": " z~Lai.75H1z88S19xrT0P~O6H.PNXE4EYo",
+        "ARM_TENANT_ID": "db05faca-c82a-4b9d-b9c5-0f64b6755421",
+        "TFVARS_INIT_PATH": "tfvars/backends/dev.backend.tfvars",
+        "TFVARS_PLAN_APPLY_PATH": "tfvars/environment/dev.tfvars"
+    },
+    "qa": {
+        "ARM_SUBSCRIPTION_ID": "fedbce29-dc93-46cb-97b0-c23a020a3874",
+        "ARM_CLIENT_ID": "048421fa-d524-4a43-b646-61687d426b9c",
+        "ARM_CLIENT_SECRET": " z~Lai.75H1z88S19xrT0P~O6H.PNXE4EYo",
+        "ARM_TENANT_ID": "db05faca-c82a-4b9d-b9c5-0f64b6755421",
+        "TFVARS_INIT_PATH": "tfvars/backends/qa.backend.tfvars",
+        "TFVARS_PLAN_APPLY_PATH": "tfvars/environment/qa.tfvars"
+    },
+    "stage": {
+        "ARM_SUBSCRIPTION_ID": "fedbce29-dc93-46cb-97b0-c23a020a3874",
+        "ARM_CLIENT_ID": "048421fa-d524-4a43-b646-61687d426b9c",
+        "ARM_CLIENT_SECRET": " z~Lai.75H1z88S19xrT0P~O6H.PNXE4EYo",
+        "ARM_TENANT_ID": "db05faca-c82a-4b9d-b9c5-0f64b6755421",
+        "TFVARS_INIT_PATH": "tfvars/backends/stage.backend.tfvars",
+        "TFVARS_PLAN_APPLY_PATH": "tfvars/environment/stage.tfvars"
+    },
+    "prod": {
+        "ARM_SUBSCRIPTION_ID": "fedbce29-dc93-46cb-97b0-c23a020a3874",
+        "ARM_CLIENT_ID": "048421fa-d524-4a43-b646-61687d426b9c",
+        "ARM_CLIENT_SECRET": " z~Lai.75H1z88S19xrT0P~O6H.PNXE4EYo",
+        "ARM_TENANT_ID": "db05faca-c82a-4b9d-b9c5-0f64b6755421",
+        "TFVARS_INIT_PATH": "tfvars/backends/prod.backend.tfvars",
+        "TFVARS_PLAN_APPLY_PATH": "tfvars/environment/prod.tfvars"
+    }
+}

@@ -1,0 +1,23 @@
+pipeline:
+  terraform:
+    azure:
+      node: docker-maven-slave
+      subscriptions:
+        DigitalSecurity:
+          credentials:
+            servicePrincipal: ServicePrincipalCredentials_DS
+      environments:
+        DigitalSecurity:
+          subscription: f7b70a1c-6526-4eb6-bc09-473019d75cf8
+          tfvars:
+           file: ./terraform.tfvars
+            values:
+              resource_group_name: rg-dev-digsec
+             storage_account_name: stdevdigsec
+             location: eastus
+          prompt: false
+          remoteState:
+            resourceGroup: rg-dev-digsec
+           storageAccount: stdevdigsec
+            location: eastus
+      defaultBranch: terraform_DS_dev
