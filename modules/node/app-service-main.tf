@@ -28,9 +28,10 @@ resource "azurerm_app_service" "appservice12" {
   resource_group_name = "mliadov-01"
  app_service_plan_id = azurerm_app_service_plan.service-plan.id
    
-   site_config {
-    linux_fx_version = "DOTNETCORE|3.1"
+ site_config {
+    linux_fx_version = "NODE|10.14"
   }
+
 
   source_control {
     repo_url = "https://github.com/OrbitCo/node.git"
