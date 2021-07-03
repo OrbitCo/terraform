@@ -46,7 +46,7 @@ resource "azurerm_app_service" "app-service" {
   }
 
   source_control {
-    repo_url = ${var.url}
+    repourl = ${var.url}
     branch = ${var.branch}
   }
   
