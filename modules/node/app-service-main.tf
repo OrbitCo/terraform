@@ -33,10 +33,10 @@ resource "azurerm_app_service" "appservice305" {
   }
 
 
-  source_control {
-    repo_url = "https://github.com/OrbitCo/node.git"
-    branch = "master"
-  }
+# source_control {
+ #   repo_url = "https://github.com/OrbitCo/node.git"
+  #  branch = "master"
+ # }
   
   tags = {
     description = var.description
