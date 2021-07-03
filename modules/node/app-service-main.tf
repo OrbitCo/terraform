@@ -8,7 +8,7 @@ resource "azurerm_app_service" "app-service-two" {
   name                = "appserviceTwo"
   location            = "Central US"
   resource_group_name = "group"
- 
+ app_service_plan_id="planOne"
 
 
 }
