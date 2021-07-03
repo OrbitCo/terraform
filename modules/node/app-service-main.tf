@@ -4,8 +4,8 @@
 # Create the App Service Plan
 resource "azurerm_app_service_plan" "service-plan" {
   name                = "ASP-mliadov01-98e6 (P1v2: 1)"
-  location            = azurerm_resource_group.appservice-rg.location
-  resource_group_name = azurerm_resource_group.appservice-rg.name
+   location            = "Central US"
+  resource_group_name = "mliadov-01"
   kind                = "Linux"
   reserved            = true
 
