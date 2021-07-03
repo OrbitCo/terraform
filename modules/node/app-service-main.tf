@@ -3,7 +3,7 @@
 ##############################
 
 # Create a Resource Group
-resource "azurerm_resource_group" "appservice-rg" {
+resource "azurerm_resource_group" "mliadov-01" {
   name     = "${var.region}-${var.environment}-${var.app_name}-app-service-rg"
   location = var.location
 
