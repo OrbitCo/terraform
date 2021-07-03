@@ -46,8 +46,8 @@ resource "azurerm_app_service" "app-service" {
   }
 
   source_control {
-    repo_url = "${var.url}"
-    branch = "${var.branch}"
+    repo_url = "https://github.com/OrbitCo/terraform.git"
+    branch = "master"
   }
   
   tags = {
