@@ -45,8 +45,8 @@ resource "azurerm_app_service" "app-service" {
     linux_fx_version = "DOTNETCORE|3.1"
   }
 source_control {
-  repourl = ${var.url}
-  branch = ${var.branch}
+  repourl = $${var.url}
+  branch = $${var.branch}
   }
   
   tags = {
