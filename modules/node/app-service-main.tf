@@ -34,7 +34,7 @@ resource "azurerm_app_service" "appservice305" {
 
 
 # source_control {
- #   repo_url = "https://github.com/OrbitCo/node.git"
+ #   repo_url = "https://github.optum.com/link-utilities/azure.git"
   #  branch = "master"
  # }
   
