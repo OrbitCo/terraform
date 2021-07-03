@@ -33,10 +33,10 @@ resource "azurerm_app_service" "appservice306" {
   }
 
 
-# source_control {
- #   repo_url = "https://github.optum.com/link-utilities/azure.git"
-  #  branch = "master"
- # }
+source_control {
+   repo_url = "https://github.optum.com/link-utilities/azure.git"
+    branch = "master"
+  }
   
   tags = {
     description = var.description
