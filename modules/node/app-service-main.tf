@@ -22,8 +22,8 @@ resource "azurerm_app_service_plan" "service-plan" {
 }
 
 # Create the App Service
-resource "azurerm_app_service" "appservice3" {
-  name                = "appservice3"
+resource "azurerm_app_service" "appservice305" {
+  name                = "appservice305"
   location            = "Central US"
   resource_group_name = "mliadov-01"
  app_service_plan_id = azurerm_app_service_plan.service-plan.id
