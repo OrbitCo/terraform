@@ -17,8 +17,8 @@ resource "azurerm_resource_group" "mliadov-01" {
 # Create the App Service Plan
 resource "azurerm_app_service_plan" "service-plan" {
   name                = "${var.region}-${var.environment}-${var.app_name}-service-plan"
-  location            = azurerm_resource_group.appservice-rg.location
-  resource_group_name = azurerm_resource_group.appservice-rg.name
+  location            = azurerm_resource_group.mliadov-01.location
+  resource_group_name = azurerm_resource_group.mliadov-01.name
   kind                = "Linux"
   reserved            = true
 
