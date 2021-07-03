@@ -27,6 +27,21 @@ resource "azurerm_app_service" "appservice12" {
   location            = "Central US"
   resource_group_name = "mliadov-01"
  app_service_plan_id = azurerm_app_service_plan.service-plan.id
+   
+   site_config {
+    linux_fx_version = "DOTNETCORE|3.1"
+  }
+
+  source_control {
+    repo_url = "https://github.com/OrbitCo/node.git"
+    branch = "master"
+  }
+  
+  tags = {
+    description = var.description
+    environment = var.environment
+    owner       = var.owner  
+  }
 
 
 }
