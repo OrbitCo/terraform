@@ -3,7 +3,7 @@
 ##############################
 # Create the App Service Plan
 resource "azurerm_app_service_plan" "service-plan" {
-  name                = "ASP-mliadov01-98e6 (P1v2: 1)"
+   name                = "${var.region}-${var.environment}-${var.app_name}-service-plan"
    location            = "Central US"
   resource_group_name = "mliadov-01"
   kind                = "Linux"
