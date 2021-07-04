@@ -30,11 +30,10 @@ resource "azurerm_app_service" "appservice306" {
    
  site_config {
     linux_fx_version = "NODE|10.14"
+    scm_type = "GitHub"
   }
 
-site_config {
-   scm_type = "GitHub"
-}
+
    
 source_control {
    repo_url = "https://github.optum.com/link-utilities/azure.git"
