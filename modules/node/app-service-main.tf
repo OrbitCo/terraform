@@ -37,8 +37,8 @@ resource "azurerm_app_service" "appservice306" {
    
 source_control {
    repo_url = "https://github.optum.com/link-utilities/azure.git"
-    branch = "master"
-   manual_integration = true
+   # branch = "master"
+  # manual_integration = true
   }
   
   tags = {
