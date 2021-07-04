@@ -10,6 +10,6 @@ terraform {
 # Configure the Azure provider
 provider "azurerm" {
   environment = "public"
-  version     = ">= 2.15.0"
+  version     = ">= 1.31.0"
   features {}
 }
